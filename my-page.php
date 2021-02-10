@@ -8,9 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
-
+    
 </head>
 <body class="p-5">
     <!--<h3>Personal Card Details</h3>
@@ -23,14 +21,34 @@
     Your card expiration date is 07/27
     <br>
     Your card CVV is 123-->
-    <h5 style="margin-top:30px;">Users</h5>
-    <div class="js_users">
-    </div>
+    <h5 style="margin-top:30px;">Users Table</h5>
+
+    <table id="table_id" class="display">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Birthday</th>
+                <th>Username</th>
+                <th>Hobbies</th>
+            </tr>
+        </thead>
+        <tbody class="db_users">
+        </tbody>
+    </table>
     <script>
+
         $.get("http://localhost/liebestraum/users/",function(data){
-            console.log(data)
             for(i in data){
-                $(".js_users").append(data[i].username+"<br>")
+                $(".db_users").append(
+                    `<tr>
+                        <td>` + data[i].first_name + `</td>
+                        <td>` + data[i].last_name + `</td>
+                        <td>` + data[i].birth_day + `</td>
+                        <td>` + data[i].random_username + `</td>
+                        <td>` + data[i].hobbies + `</td>
+                    </tr>`
+                )
             }
         })
     </script>
