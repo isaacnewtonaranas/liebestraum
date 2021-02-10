@@ -5,7 +5,7 @@
         
         $first_name = randomName();
         $last_name = randomName();
-        $birth_day = randomMonthd()." ".randomDays().",".randomYears();
+        $birth_day = randomMonths()." ".randomDays().",".randomYears();
         $random_username = strtolower(randomName())."_".strtolower(randomName());
         $hobbies = randomHobbies();
        // $tindex = rand(3,5);
