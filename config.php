@@ -110,7 +110,7 @@
         return $names[rand ( 0 , count($names) -1)];
     }
     function randomMonths() {
-        $months = array('January',
+        $tarray = array('January',
         'February',
         'March',
         'April',
@@ -123,20 +123,20 @@
         'November',
         'December',
         );
-        return $months[rand ( 0 , count($months) -1)];
+        return $tarray[rand ( 0 , count($tarray) -1)];
     }
     function randomDays() {
-        $months = array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15',
-        '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', 
+        $tarray = array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15',
+        '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28',  
         );
-        return $months[rand ( 0 , count($months) -1)];
+        return $tarray[rand ( 0 , count($tarray) -1)];
     }
 
     function randomYears() {
-        $months = array('2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009',
+        $tarray = array('2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009',
         '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021',
         );
-        return $months[rand ( 0 , count($months) -1)];
+        return $tarray[rand ( 0 , count($tarray) -1)];
     }
 
     function randomHobbies() {

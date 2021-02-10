@@ -2,7 +2,7 @@
     require "config.php";
 
     for($n = 0;$n < 10;$n++){
-        $random_username = strtolower(randomName())."_".strtolower(randomName());
+        
         $first_name = randomName();
         $last_name = randomName();
         $birth_day = randomMonthd()." ".randomDays().",".randomYears();
