@@ -2,14 +2,13 @@
     require "config.php";
     require "functions.php";
 
-    mysqli_query($con,"DELETE FROM `users`WHERE(`username`, `fname`, `lname`, `birthday`, `hobbies`)
-       VALUES ('$random_username','$first_name','$last_name','$birth_day','$hobbies')");
+    mysqli_query($con,"DELETE FROM `users`");
 
     for($n = 0;$n < 10;$n++){
         
         $first_name = randomName();
         $last_name = randomName();
-        $birth_day = randomMonths()." ".randomDays().",".randomYears();
+        $birth_day = randomYears()."-".randomMonths()."-".randomDays();
         $random_username = strtolower(randomName())."_".strtolower(randomName());
         $hobbies = randomHobbies();
        // $tindex = rand(3,5);
