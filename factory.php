@@ -1,5 +1,9 @@
 <?php
     require "config.php";
+    require "functions.php";
+
+    mysqli_query($con,"DELETE FROM `users`WHERE(`username`, `fname`, `lname`, `birthday`, `hobbies`)
+       VALUES ('$random_username','$first_name','$last_name','$birth_day','$hobbies')");
 
     for($n = 0;$n < 10;$n++){
         
