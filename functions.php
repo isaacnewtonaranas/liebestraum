@@ -142,4 +142,81 @@ function randomName() {
         );
         return $hobbies[rand ( 0 , count($hobbies) -1)];
     }
+
+    function randomCompositions() {
+        $compositions = array(
+            'Gnarly Buttons',
+            'Gaelic Symphony',
+            'The Red Violin',
+            'Eine kleine Nachtmusik',
+            'Für Elise',
+            'The Four Seasons',
+            'The Blue Danube',
+            'Boléro',
+            'Flower Duet’ from Lakmé',
+            'Overture from The Marriage of Figaro',
+            'Overture from William Tell',
+            'Mystery Sonatas',
+            'Giselle',
+            'Coppélia',
+            'Faust',
+            'The Firebird',
+            'The Art of the Fugue',
+            'Carmina Burana',
+            'The Barber of Seville',
+            'La strada',
+            'Otello',
+        );
+        return  $compositions[rand ( 0 , count($compositions) -1)];
+    }
+
+    function randomMusiciansName() {
+        $full_name = array(
+            'The Beatles',
+            'Bob Dylan',
+            'Elvis Presley',
+            'The Rolling Stones',
+            'Chuck Berry',
+            'Jimi Hendrix',
+            'James Brown',
+            'Little Richard',
+            'Aretha Franklin',
+            'Ray Charles',
+            'Bob Marley',
+            'The Beach Boys',
+            'Buddy Holly',
+            'Led Zeppelin',
+            'Stevie Wonder',
+            'Sam Cooke',
+            'Muddy Waters',
+            'Marvin Gaye',
+        );
+        return $full_name[rand ( 0 , count($full_name) -1)];
+    }
+
+    function randomCountry() {
+        $country = array(
+        'Norway',
+        'Russia',
+        'Spain',
+        'Philippines',
+        'USA',
+        'New York',
+        'Brazil',
+        'Sweden',
+        'Switzerland',
+        'United Kingdom',
+        'Venezuela',
+        'New Zealand',
+        'Netherlands',
+        'Mexico',
+        'Italy',
+        'Ireland',
+        'Greece',
+        'Germany',
+        'France',
+        'Australia',
+        );
+        return $country[rand ( 0 , count($country) -1)];
+    }
     ?>
