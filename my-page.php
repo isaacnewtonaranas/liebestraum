@@ -8,13 +8,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
-=======
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
     <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
->>>>>>> a238779590777fc2a42828af0d983983aa5b9871
 </head>
 <body class="p-5">
     <!--<h3>Personal Card Details</h3>
@@ -59,15 +54,9 @@
                 )
             }
         })
-<<<<<<< HEAD
         $(document).ready( function () {
             $('#table_id').DataTable();
         } );
-=======
-        $(document).ready(function(){
-            $('#table_id').DataTable();
-        });
->>>>>>> a238779590777fc2a42828af0d983983aa5b9871
     </script>
 </body>
 </html>
