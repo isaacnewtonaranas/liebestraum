@@ -39,13 +39,14 @@
     <script>
 
         $.get("http://localhost/liebestraum/users/",function(data){
+            console.log(data)
             for(i in data){
                 $(".db_users").append(
                     `<tr>
                         <td>` + data[i].first_name + `</td>
                         <td>` + data[i].last_name + `</td>
-                        <td>` + data[i].birth_day + `</td>
-                        <td>` + data[i].random_username + `</td>
+                        <td>` + data[i].birthday + `</td>
+                        <td>` + data[i].username + `</td>
                         <td>` + data[i].hobbies + `</td>
                     </tr>`
                 )
