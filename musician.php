@@ -31,7 +31,7 @@
     <script>
 
         $.get("http://localhost/liebestraum/musicians/",function(data){
-            console.log(data)
+            
             for(i in data){
                 
                 $(".db_musicians").append(
