@@ -19,10 +19,9 @@
         <thead>
             <tr>
                 <th>Name</th>
+                <th>Composition</th>
                 <th>Country</th>
-                <th>Created</th>
-                <th>Modified</th>
-                <th>ID</th>
+
             </tr>
         </thead>
         <tbody class="db_musicians">
@@ -31,16 +30,15 @@
     <script>
 
         $.get("http://localhost/liebestraum/musicians/",function(data){
-            
+            console.log(data)
             for(i in data){
                 
                 $(".db_musicians").append(
                     `<tr>
                         <td>` + data[i].full_name + `</td>
+                        <td>` + data[i].compositions + `</td>
                         <td>` + data[i].country + `</td>
-                        <td>` + data[i].created + `</td>
-                        <td>` + data[i].modified + `</td>
-                        <td>` + data[i].id + `</td>
+                        
                     </tr>`
                 )
             }
