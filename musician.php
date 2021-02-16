@@ -15,12 +15,14 @@
  
     <h5 style="margin-top:30px;">Musicians</h5>
 
-    <table id="table_id2" class="display">
+    <table id="table_id" class="display">
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Compositions</th>
                 <th>Country</th>
+                <th>Created</th>
+                <th>Modified</th>
+                <th>ID</th>
             </tr>
         </thead>
         <tbody class="db_musicians">
@@ -35,14 +37,16 @@
                 $(".db_musicians").append(
                     `<tr>
                         <td>` + data[i].full_name + `</td>
-                        <td>` + data[i].compositions + `</td>
                         <td>` + data[i].country + `</td>
+                        <td>` + data[i].created + `</td>
+                        <td>` + data[i].modified + `</td>
+                        <td>` + data[i].id + `</td>
                     </tr>`
                 )
             }
         })
         $(document).ready( function () {
-            $('#table_id2').DataTable();
+            $('#table_id').DataTable();
         } );
     </script>
 </body>
