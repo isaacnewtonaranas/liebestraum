@@ -35,10 +35,10 @@
        
                 $(".db_runrs").append(
                     `<tr>
-                        <td>` + data[i].fname `</td>
+                        <td>` + data[i].fname + `</td>
                         <td>` + data[i].song + `</td>
-                        <td>` + data[i].positions + `</td>
-                        <td>` + data[i].locations + `</td>
+                        <td>` + data[i].position + `</td>
+                        <td>` + data[i].location + `</td>
                         
                     </tr>`
                 )
