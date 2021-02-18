@@ -29,7 +29,7 @@
     </table>
     <script>
 
-        $.get("http://localhost/liebestraum/musicians/",function(data){
+        $.get("http://localhost:8080/liebestraum/musicians/",function(data){
             console.log(data)
             for(i in data){
                 

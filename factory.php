@@ -29,3 +29,18 @@
        mysqli_query($con,"INSERT INTO `musicians`(`compositions`, `full_name`, `country`)
        VALUES ('$compositions','$full_name','$country')");
     }
+
+    
+    mysqli_query($con,"DELETE FROM `runners`");
+
+    for($n = 0;$n < 10;$n++){
+        
+        $fname =  randomName();
+        $lname = randomName();
+        $song = randomCompositions();
+        $positions = randomGovPositions();
+        $locations = randomLocations();
+       
+       mysqli_query($con,"INSERT INTO `runners`(`position`, `location`, `song`, `fname`, `lname`)
+       VALUES ('$positions','$locations','$song','$fname','$lname')");
+    }

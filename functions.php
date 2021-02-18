@@ -166,6 +166,16 @@ function randomName() {
             'The Barber of Seville',
             'La strada',
             'Otello',
+            'The Four Season',
+            'Piano Sonata No.4',
+            'The Rite of Spring',
+            'La Traviata',
+            'Requiem',
+            'La Boheme',
+            'Piano Sonata No.11',
+            'The Firebird',
+            'Parsifal',
+            'Tosca',
         );
         return  $compositions[rand ( 0 , count($compositions) -1)];
     }
@@ -219,4 +229,54 @@ function randomName() {
         );
         return $country[rand ( 0 , count($country) -1)];
     }
+
+    function randomGovPositions() {
+        $positions = array(
+            'President',
+            'Vice-President',
+            'City Mayor',
+            'Provincial governors',
+            'Regional chief minister',
+            'Provincial vice governor',
+            'City vice mayor',
+            'Barangay chairman',
+            'Executive Secretary',
+            'Secretary of Agrarian Reform',
+            'Secretary of Agriculture',
+            'Public Works Director',
+            'Secretary of Education',
+            'Secretary of Energy',
+            'Secretary of Finance',
+            'Secretary of Foreign Affairs',
+            'Secretary of Health',
+            'Secretary of Justice',
+            'Planning Director',
+            'Secretary of National Defense',
+            'Secretary of Tourism',
+            'Vice Governor',
+            'Chief Police',
+            'Congressman',
+            'Congresswoman',
+            'City Manager',
+            'Finance Director',
+        );
+        return $positions[rand ( 0 , count($positions) -1)];
+    }
+
+    function randomLocations() {
+        $locations = array(
+            'Alaminos',  'Alaminos',  'Bacolod',
+            'Baguio',  'Batangas City',  'Biñan',
+            'Cabanatuan',  'Calamba',  'Dapitan',
+            'Davao City',  'El Salvador',  'General Santos',
+            'Iloilo City',  'Himamaylan',  'Laoag',
+            'Las Piñas',  'Muntinlupa',  'Naga',
+            'Ormoc',  'Parañaque',  'Pasay',
+            'Quezon City',  'Samal',  'San Pedro',
+            'Tagaytay',  'Tanauan',  'Urdaneta',
+            'Valenzuela',  'Vigan',  'Zamboanga City', 
+        );
+        return $locations[rand ( 0 , count($locations) -1)];
+    }
+
     ?>
