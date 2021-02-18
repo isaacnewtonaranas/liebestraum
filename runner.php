@@ -12,44 +12,34 @@
     <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
 </head>
 <body class="p-5">
-    <!--<h3>Personal Card Details</h3>
-    <p>
-    Do not share your personal information such as your user name, passwords, and e-mail address with anybody. Do not share any of your credit card details such as the 3-digit security code found at the back of the card and/or the credit card expiry date. Change your PIN regularly, and do not share it with anyone.
-    </p>
-    <br>
-    Your card number is 1234-1234-1234-1234
-    <br>
-    Your card expiration date is 07/27
-    <br>
-    Your card CVV is 123-->
-    <h5 style="margin-top:30px;">Users Table</h5>
+ 
+    <h5 style="margin-top:30px;">Runners</h5>
 
     <table id="table_id" class="display">
         <thead>
             <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Birthday</th>
-                <th>Username</th>
-                <th>Hobbies</th>
+                <th>Name</th>
+                <th>Song</th>
+                <th>Positions</th>
+                <th>Location</th>
             </tr>
         </thead>
-        <tbody class="db_users">
+        <tbody class="db_runrs">
         </tbody>
     </table>
     <script>
-        //$.get("http://localhost:8080/liebestraum/users/",function(data){
-        $.get("http://localhost/liebestraum/users/",function(data){
+        //$.get("http://localhost:8080/liebestraum/runners/",function(data){
+        $.get("http://localhost/liebestraum/runners/",function(data){
             console.log(data)
             for(i in data){
-                
-                $(".db_users").append(
+       
+                $(".db_runrs").append(
                     `<tr>
-                        <td>` + data[i].fname + `</td>
-                        <td>` + data[i].lname + `</td>
-                        <td>` + data[i].birthday + `</td>
-                        <td>` + data[i].username + `</td>
-                        <td>` + data[i].hobbies + `</td>
+                        <td>` + data[i].fname `</td>
+                        <td>` + data[i].song + `</td>
+                        <td>` + data[i].positions + `</td>
+                        <td>` + data[i].locations + `</td>
+                        
                     </tr>`
                 )
             }
