@@ -13,7 +13,7 @@
 </head>
 <body class="p-5">
  
-    <h5 style="margin-top:30px;">Runners</h5>
+    <h5 style="margin-top:30px;">Cinemas</h5>
 
     <table id="table_id" class="display">
         <thead>
