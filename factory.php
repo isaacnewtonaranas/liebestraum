@@ -44,3 +44,16 @@
        mysqli_query($con,"INSERT INTO `runners`(`position`, `location`, `song`, `fname`, `lname`)
        VALUES ('$positions','$locations','$song','$fname','$lname')");
     }
+
+    mysqli_query($con,"DELETE FROM `cinemas`");
+
+    for($n = 0;$n < 10;$n++){
+        
+        $titles =  randomName();
+        $directors= randomName()." ".randomName();
+        $years = randomYears();
+        $genres = randomGovPositions();
+
+       mysqli_query($con,"INSERT INTO `cinemas`(`title`, `director`, `year`, `genre`)
+       VALUES ('$titles','$directors','$years','$genres')");
+    }

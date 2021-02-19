@@ -279,4 +279,56 @@ function randomName() {
         return $locations[rand ( 0 , count($locations) -1)];
     }
 
+    function randomTitles() {
+        $titles = array(
+        'Himala',
+        'Hello, Love, Goodbye',
+        'The Hows of Us',
+        'One More Chance',
+        'Four Sisters and a Wedding',
+        'She’s Dating the Gangster',
+        'In My Life',
+        'Graceland',
+        'Caregiver',
+        'The Call',
+        'Alive',
+        'Along with the Gods',
+        'The Silence',
+        'Hello World',
+        'Space Sweeper',
+        'The Founder',
+        'Kita Kita',
+        'Alone Together',
+        'Joy',
+        'Kissing Booth',
+        );
+        return $titles[rand ( 0 , count($titles) -1)];
+    }
+
+    function randomGenres() {
+        $genres = array(
+        'Thriller',
+        'Horror',
+        'Romance',
+        'Western',
+        'Literary Fiction',
+        'Mystery',
+        'Suspense',
+        'Speculative Fiction',
+        'Science Fiction',
+        'Fantasy',
+        'Dystopian',
+        'Drama',
+        'Non-Fiction',
+        'Poetry',
+        'Folk Tale',
+        'Biography',
+        'Comedy',
+        'Action',
+        'RomCom',
+        'Romance Novel',
+        );
+        return $genres[rand ( 0 , count($genres) -1)];
+    }
+
     ?>
