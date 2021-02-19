@@ -49,10 +49,10 @@
 
     for($n = 0;$n < 10;$n++){
         
-        $titles =  randomName();
+        $titles =  randomTitles();
         $directors= randomName()." ".randomName();
         $years = randomYears();
-        $genres = randomGovPositions();
+        $genres = randomGenres();
 
        mysqli_query($con,"INSERT INTO `cinemas`(`title`, `director`, `year`, `genre`)
        VALUES ('$titles','$directors','$years','$genres')");
