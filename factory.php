@@ -57,3 +57,17 @@
        mysqli_query($con,"INSERT INTO `cinemas`(`title`, `director`, `year`, `genre`)
        VALUES ('$titles','$directors','$years','$genres')");
     }
+
+    mysqli_query($con,"DELETE FROM `books`");
+    
+    for($n = 0;$n < 10;$n++){
+        
+        $book =  randomBooks();
+        $author= randomName()." ".randomName();
+        $published = randomDays()."-".randomMonths()."-".randomYears();
+        $genres = randomGenres();
+        $location = randomCountry();
+
+       mysqli_query($con,"INSERT INTO `books`(`title`, `author`, `genre`, `published`,`location`)
+       VALUES ('$titles','$author','$genres','$published','$location')");
+    }
