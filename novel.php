@@ -13,7 +13,7 @@
 </head>
 <body class="p-5">
  
-    <h5 style="margin-top:30px;">Runners</h5>
+    <h5 style="margin-top:30px;">Novels</h5>
 
     <table id="table_id" class="display">
         <thead>
@@ -25,22 +25,22 @@
                 <th>Location</th>
             </tr>
         </thead>
-        <tbody class="db_novel">
+        <tbody class="db_novels">
         </tbody>
     </table>
     <script>
-        //$.get("http://localhost:8080/liebestraum/runners/",function(data){
-        $.get("http://localhost/liebestraum/runners/",function(data){
+        $.get("http://localhost:8080/liebestraum/novels/",function(data){
+        //$.get("http://localhost/liebestraum/novels/",function(data){
             console.log(data)
             for(i in data){
        
-                $(".db_novel").append(
+                $(".db_novels").append(
                     `<tr>
-                        <td>` + data[i].fname + `</td>
-                        <td>` + data[i].song + `</td>
-                        <td>` + data[i].position + `</td>
+                        <td>` + data[i].title + `</td>
+                        <td>` + data[i].author + `</td>
+                        <td>` + data[i].genre + `</td>
+                        <td>` + data[i].published + `</td>
                         <td>` + data[i].location + `</td>
-                        
                     </tr>`
                 )
             }
