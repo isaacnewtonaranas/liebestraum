@@ -29,8 +29,8 @@
         </tbody>
     </table>
     <script>
-        $.get("http://localhost:8080/liebestraum/novels/",function(data){
-        //$.get("http://localhost/liebestraum/novels/",function(data){
+        //$.get("http://localhost:8080/liebestraum/novels/",function(data){
+        $.get("http://localhost/liebestraum/novels/",function(data){
             console.log(data)
             for(i in data){
        

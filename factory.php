@@ -60,7 +60,7 @@
 
     mysqli_query($con,"DELETE FROM `books`");
     
-    for($n = 0;$n < 10;$n++){
+    for($n = 0;$n < 18;$n++){
         
         $book =  randomBooks();
         $author= randomName()." ".randomName();
@@ -69,5 +69,5 @@
         $location = randomCountry();
 
        mysqli_query($con,"INSERT INTO `books`(`title`, `author`, `genre`, `published`,`location`)
-       VALUES ('$titles','$author','$genres','$published','$location')");
+       VALUES ('$book','$author','$genres','$published','$location')");
     }

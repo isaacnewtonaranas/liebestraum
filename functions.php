@@ -324,20 +324,26 @@ function randomGenres() {
 }
 
 function randomBooks(){
-    $book = array (
-        'My Friend',
-        'DULYSSES',
+    $book = array(
+        'MY FRIEND',
+        'ASHES',
         'THE GREAT RATS',
         'A PORTRAIT OF THE ARTIST AS A YOUNG WOMAN',
         'ARRIETY',
         'SCARY WORLD',
         'THE SOUND OF FURY',
-        'CATCH--THE-COLD',
+        'CATCH-THE-COLD',
         'DARKNESS AT LIGHT',
         'RAVENS AND DOVES',
         'THE WINE',
         'UNDER THE RIVER',
         'THE WAY FOR ALL THE FISH',
+        'HOUSE OF US',
+        'HAHA FOR YOU',
+        'I WILL LOVE YOU FOREVER',
+        'DRAGONFLY',
+        'MY LITTLE NIGHTMARES'
+
     );
     return $book[rand ( 0 , count($book) -1)];
 }
