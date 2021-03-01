@@ -71,3 +71,18 @@
        mysqli_query($con,"INSERT INTO `books`(`title`, `author`, `genre`, `published`,`location`)
        VALUES ('$book','$author','$genres','$published','$location')");
     }
+
+
+    mysqli_query($con,"DELETE FROM `verbs`");
+    
+    for($n = 0;$n < 100;$n++){
+        
+        $names = randomName();
+        $words =  randomWords();
+        $where = randomPlace();
+        $while = randomWords();
+       
+
+       mysqli_query($con,"INSERT INTO `verbs`(`name`, `doing`, `place`, `while_doing`)
+       VALUES ('$names','$words','$where','$while')");
+    }

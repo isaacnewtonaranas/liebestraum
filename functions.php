@@ -347,4 +347,80 @@ function randomBooks(){
     );
     return $book[rand ( 0 , count($book) -1)];
 }
+
+
+function randomWords(){
+    $words = array(
+        'nagluto',
+        'nagsampay',
+        'tumakbo',
+        'tumalon',
+        'sumemplang',
+        'bumagsak',
+        'naglaro',
+        'nagbigay',
+        'sumigaw',
+        'uminom',
+        'naglalakad',
+        'nagalit',
+        'nagtanong',
+        'humihingi',
+        'nagagalit',
+        'naiinis',
+        'umaarte',
+        'kumagat',
+        'umutang',
+        'nagyabang',
+        'nagbasag',
+        'nagsira',
+        'nagwasak',
+        'nagsama',
+        'nag-uwi',
+        'nagsunog',
+        'bumili',
+        'tumawag',
+        'nag-abot',
+        'nagpalit',
+        'nagbihis',
+        'naglinis',
+        'nandaya',
+        'pumalakpak',
+        'umakyat',
+        'nagsara',
+        'nag-ipon',
+        'nanonood',
+        'nagbibilang ng pera',
+    );
+    return $words[rand ( 0 , count($words) -1)];
+}
+function randomPlace(){
+    $place = array(
+        'kusina',
+        'banyo',
+        'bahay',
+        'kwarto',
+        'salas',
+        'eskwelahan',
+        'hospital',
+        'klinika',
+        'tindahan',
+        'palaruan',
+        'kubo',
+        'barko',
+        'bisikleta',
+        'kotse',
+        'bus',
+        'upuan',
+        'lamesa',
+        'kalsada',
+        'kama',
+        'karinderia',
+        'palayan',
+        'gubat',
+        'kapitbahay',
+        'palengke',
+    );
+    return $place[rand ( 0 , count($place) -1)];
+}
+
 ?>
