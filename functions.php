@@ -349,7 +349,7 @@ function randomBooks(){
 }
 
 
-function randomWords(){
+function randomWords_elijah(){
     $words = array(
         'nagluto',
         'nagsampay',
@@ -393,7 +393,7 @@ function randomWords(){
     );
     return $words[rand ( 0 , count($words) -1)];
 }
-function randomPlace(){
+function randomPlace_elijah(){
     $place = array(
         'kusina',
         'banyo',

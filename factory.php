@@ -78,9 +78,9 @@
     for($n = 0;$n < 100;$n++){
         
         $names = randomName();
-        $words =  randomWords();
-        $where = randomPlace();
-        $while = randomWords();
+        $words =  randomWords_elijah();
+        $where = randomPlace_elijah();
+        $while = randomWords_elijah();
        
 
        mysqli_query($con,"INSERT INTO `verbs`(`name`, `doing`, `place`, `while_doing`)
