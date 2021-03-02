@@ -348,6 +348,7 @@ function randomBooks(){
     return $book[rand ( 0 , count($book) -1)];
 }
 
+
 function randomTagalogNames(){
     $tagname = array(
         'Abigail',
@@ -541,7 +542,7 @@ function randomVerbs(){
         'nagtatanim',
         'nagtatanong',
         'nagtutulak',
-        'natutulog',
+        'natutulog', 
         'nagtuturo',
         'nagsusulat',
         'umuupo',

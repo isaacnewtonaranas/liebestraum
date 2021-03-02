@@ -82,3 +82,4 @@
        mysqli_query($con,"INSERT INTO `tagalog_verbs_aira`(`tagname`, `doing`, `where`, `while`)
        VALUES ('$tagname','$doing','$where','$while')");
     }
+    ?>
