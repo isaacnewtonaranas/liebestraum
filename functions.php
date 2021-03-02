@@ -349,7 +349,6 @@ function randomBooks(){
 }
 
 
-<<<<<<< HEAD
 function randomTagalogNames(){
     $tagname = array(
         'Abigail',
@@ -474,47 +473,6 @@ function randomVerbs(){
     $verbs = array(
         'nagluluto',
         'kumakain',
-=======
-function randomWords_elijah(){
-    $words = array(
-        'nagluto',
-        'nagsampay',
-        'tumakbo',
-        'tumalon',
-        'sumemplang',
-        'bumagsak',
-        'naglaro',
-        'nagbigay',
-        'sumigaw',
-        'uminom',
-        'naglalakad',
-        'nagalit',
-        'nagtanong',
-        'humihingi',
-        'nagagalit',
-        'naiinis',
-        'umaarte',
-        'kumagat',
-        'umutang',
-        'nagyabang',
-        'nagbasag',
-        'nagsira',
-        'nagwasak',
-        'nagsama',
-        'nag-uwi',
-        'nagsunog',
-        'bumili',
-        'tumawag',
-        'nag-abot',
-        'nagpalit',
-        'nagbihis',
-        'naglinis',
-        'nandaya',
-        'pumalakpak',
-        'umakyat',
-        'nagsara',
-        'nag-ipon',
->>>>>>> 5fef5ccdc87ac6e4ff54fbb9103b5498295f050e
         'nanonood',
         'lumalangoy',
         'umiiyak',
@@ -596,12 +554,145 @@ function randomWords_elijah(){
     );
     return $verbs[rand ( 0 , count($verbs) -1)];
 }
-<<<<<<< HEAD
 
 function randomPlace(){
-=======
+    $place = array(
+     'banyo',
+     'salas',
+     'kwarto',
+     'labas',
+     'mall',
+     'bayan',
+     'palayan',
+     'supermarket',
+     'study table',
+     'lamesa',
+
+     'tindahan',
+     'paaralan',
+     'palaruan',
+     'labahan',
+     'lababo',
+     'silid-aralan',
+     'gym',
+     'tahian',
+     'bahay',
+     'palengke',
+     
+     'barangay',
+     'munispyo',
+     'museo',
+     'library',
+     'paliguan',
+     'dagat',
+     'ilog',
+     'bundok',
+     'sapa',
+     'burol',
+     
+     'sementeryo',
+     'simbahan',
+     'kapihan',
+     'office',
+     'silid-aklatan',
+     'gubat',
+     'palayan',
+     'resort',
+     'studio',
+     'computer shop',
+     
+     'bangko',
+     'airport',
+     'ospital',
+     'clinic',
+     'sinehan',
+     'department store',
+     'bookstore',
+     'karenderya',
+     'lomihan',
+     'paresan',
+
+    );
+    return $place[rand ( 0 , count($place) -1)];
+}
+
+
+
+function randomWords_elijah(){
+    $words = array(
+        'nagluto',
+        'nagsampay',
+        'tumakbo',
+        'tumalon',
+        'sumemplang',
+        'bumagsak',
+        'naglaro',
+        'nagbigay',
+        'sumigaw',
+        'uminom',
+        'naglalakad',
+        'nagalit',
+        'nagtanong',
+        'humihingi',
+        'nagagalit',
+        'naiinis',
+        'umaarte',
+        'kumagat',
+        'umutang',
+        'nagyabang',
+        'nagbasag',
+        'nagsira',
+        'nagwasak',
+        'nagsama',
+        'nag-uwi',
+        'nagsunog',
+        'bumili',
+        'tumawag',
+        'nag-abot',
+        'nagpalit',
+        'nagbihis',
+        'naglinis',
+        'nandaya',
+        'pumalakpak',
+        'umakyat',
+        'nagsara',
+        'nag-iipon',
+        'umiiwas',
+        'kumakatok',
+        'nakikinig',
+        'naglalakad',
+        'naglalaro',
+        'naliligo',
+
+        'lumulutang',
+        'nagmamaneho',
+        'nguminiti',
+       'nagpapaalam',
+        'nagpapakilala',
+        'pumapasok',
+        'pumipirma',
+        'nagpupunas',
+        'sumasakay',
+        'nagsisipilyo',
+
+        'nagtatago',
+        'nagtatanim',
+        'nagtatanong',
+        'nagtutulak',
+        'natutulog', 
+        'nagtuturo',
+        'nagsusulat',
+        'umuupo',
+        'umuupa',
+        'nagwawalis',
+    
+//https://samutsamot.files.wordpress.com/2014/11/mga-pandiwa-sa-ibat-ibang-panahunan1.pdf
+
+    );
+    return $verbs[rand ( 0 , count($verbs) -1)];
+}
+        
 function randomPlace_elijah(){
->>>>>>> 5fef5ccdc87ac6e4ff54fbb9103b5498295f050e
     $place = array(
      'banyo',
      'salas',
