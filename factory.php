@@ -74,6 +74,7 @@
 
     for($n = 0;$n < 50;$n++){
         
+<<<<<<< HEAD
         $tagname =  randomTagalogNames();
         $doing= randomVerbs();
         $where = randomPlace();
@@ -83,3 +84,14 @@
        VALUES ('$tagname','$doing','$where','$while')");
     }
     ?>
+=======
+        $names = randomName();
+        $words =  randomWords_elijah();
+        $where = randomPlace_elijah();
+        $while = randomWords_elijah();
+       
+
+       mysqli_query($con,"INSERT INTO `verbs`(`name`, `doing`, `place`, `while_doing`)
+       VALUES ('$names','$words','$where','$while')");
+    }
+>>>>>>> 5fef5ccdc87ac6e4ff54fbb9103b5498295f050e

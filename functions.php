@@ -349,6 +349,7 @@ function randomBooks(){
 }
 
 
+<<<<<<< HEAD
 function randomTagalogNames(){
     $tagname = array(
         'Abigail',
@@ -473,6 +474,47 @@ function randomVerbs(){
     $verbs = array(
         'nagluluto',
         'kumakain',
+=======
+function randomWords_elijah(){
+    $words = array(
+        'nagluto',
+        'nagsampay',
+        'tumakbo',
+        'tumalon',
+        'sumemplang',
+        'bumagsak',
+        'naglaro',
+        'nagbigay',
+        'sumigaw',
+        'uminom',
+        'naglalakad',
+        'nagalit',
+        'nagtanong',
+        'humihingi',
+        'nagagalit',
+        'naiinis',
+        'umaarte',
+        'kumagat',
+        'umutang',
+        'nagyabang',
+        'nagbasag',
+        'nagsira',
+        'nagwasak',
+        'nagsama',
+        'nag-uwi',
+        'nagsunog',
+        'bumili',
+        'tumawag',
+        'nag-abot',
+        'nagpalit',
+        'nagbihis',
+        'naglinis',
+        'nandaya',
+        'pumalakpak',
+        'umakyat',
+        'nagsara',
+        'nag-ipon',
+>>>>>>> 5fef5ccdc87ac6e4ff54fbb9103b5498295f050e
         'nanonood',
         'lumalangoy',
         'umiiyak',
@@ -554,8 +596,12 @@ function randomVerbs(){
     );
     return $verbs[rand ( 0 , count($verbs) -1)];
 }
+<<<<<<< HEAD
 
 function randomPlace(){
+=======
+function randomPlace_elijah(){
+>>>>>>> 5fef5ccdc87ac6e4ff54fbb9103b5498295f050e
     $place = array(
      'banyo',
      'salas',
