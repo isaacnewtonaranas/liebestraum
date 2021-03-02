@@ -71,3 +71,14 @@
        mysqli_query($con,"INSERT INTO `books`(`title`, `author`, `genre`, `published`,`location`)
        VALUES ('$book','$author','$genres','$published','$location')");
     }
+
+    for($n = 0;$n < 50;$n++){
+        
+        $tagname =  randomTagalogNames();
+        $doing= randomVerbs();
+        $where = randomPlace();
+        $while = randomVerbs();
+     
+       mysqli_query($con,"INSERT INTO `tagalog_verbs_aira`(`tagname`, `doing`, `where`, `while`)
+       VALUES ('$tagname','$doing','$where','$while')");
+    }

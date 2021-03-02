@@ -13,34 +13,33 @@
 </head>
 <body class="p-5">
  
-    <h5 style="margin-top:30px;">Novels</h5>
+    <h5 style="margin-top:30px;">Tagalog Verbs</h5>
 
     <table id="table_id" class="display">
         <thead>
             <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Genre</th>
-                <th>Published</th>
-                <th>Location</th>
+                <th>Name</th>
+                <th>Doing</th>
+                <th>Where</th>
+                <th>While</th>
             </tr>
         </thead>
-        <tbody class="db_novels">
+        <tbody class="db_tverbs">
         </tbody>
     </table>
     <script>
-        $.get("http://localhost:8080/liebestraum/novels/",function(data){
-        //$.get("http://localhost/liebestraum/novels/",function(data){
+        $.get("http://localhost:8080/liebestraum/verbs_aira/",function(data){
+        //$.get("http://localhost/liebestraum/verbs_aira/",function(data){
             console.log(data)
-            for(i in data){
+            for(i in data){ 
        
-                $(".db_novels").append(
+                $(".db_tverbs").append(
                     `<tr>
-                        <td>` + data[i].title + `</td>
-                        <td>` + data[i].author + `</td>
-                        <td>` + data[i].genre + `</td>
-                        <td>` + data[i].published + `</td>
-                        <td>` + data[i].location + `</td>
+                        <td>` + data[i].tagname + `</td>
+                        <td>` + data[i].doing + `</td>
+                        <td>` + data[i].where + `</td>
+                        <td>` + data[i].while + `</td>
+                        
                     </tr>`
                 )
             }
