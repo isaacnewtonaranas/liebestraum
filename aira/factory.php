@@ -73,6 +73,9 @@
     }
 
         // VERBS
+        
+    mysqli_query($con,"DELETE FROM `tagalog_verbs_aira`");
+    
     for($n = 0;$n < 50;$n++){
         
         $tagname =  randomTagalogNames();
@@ -83,12 +86,19 @@
        mysqli_query($con,"INSERT INTO `tagalog_verbs_aira`(`tagname`, `doing`, `where`, `while`)
        VALUES ('$tagname','$doing','$where','$while')");
 
-        $names = randomName();
-        $words =  randomWords_elijah();
-        $where = randomPlace_elijah();
-        $while = randomWords_elijah();
-       
+    }
 
-       mysqli_query($con,"INSERT INTO `verbs`(`name`, `doing`, `place`, `while_doing`)
-       VALUES ('$names','$words','$where','$while')");
+    mysqli_query($con,"DELETE FROM `questions_aira`");
+    
+    for($n = 0;$n < 50;$n++){
+        
+        $question =  randomTagalogNames();
+        $choice_1= randomVerbs();
+        $choice_2 = randomPlace();
+        $choice_3 = randomVerbs();
+        $right_answer = randomVerbs();
+
+       mysqli_query($con,"INSERT INTO `questions_aira`(`question`, `choice_1`, `choice_2`, `choice_3`,`right_answer`)
+       VALUES ('$question','$choice_1','$choice_2','$choice_3','$right_answer')");
+
     }
